@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Kjo eshte faqja ime e pare!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2main.css"/>
+    <style>
+        /* Additional CSS for adding squares after paragraphs */
+        p {
+            position: relative; /* Make the paragraph relative */
+            padding-right: 20px; /* Space for the square */
+            margin-bottom: 20px; /* Add margin below paragraphs */
+        }
+        p::after {
+            content: ''; /* Empty content */
+            position: absolute; /* Position it absolutely */
+            top: 50%; /* Align vertically in the middle */
+            right: 0; /* Align to the right */
+            transform: translateY(-50%); /* Adjust for vertical alignment */
+            width: 10px; /* Square width */
+            height: 10px; /* Square height */
+            background-color: black; /* Square color */
+        }
+
+        /* Your existing CSS styles */
+        .container {
+            width: 100%; /* Full width container */
+            max-width: 1200px; /* Limit maximum width */
+            margin: 0 auto;
+            padding: 10px; /* Add padding */
+            box-sizing: border-box; /* Include padding and border in total width */
+        }
+
+        header {
+            overflow: hidden;
+            margin-bottom: 20px;
+            padding: 10px 0; /* Add padding */
+            box-sizing: border-box; /* Include padding and border in total height */
+        }
+
+        .logo {
+            width: 100px; /* Adjust the width of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Example margin for spacing */
+            display: block; /* Ensure logos are displayed as block elements */
+        }
+
+        .top_nav {
+            text-align: center; /* Center-align the navigation */
+            margin-top: 20px; /* Adjust vertical alignment */
+            margin-bottom: 10px; /* Add margin to bottom */
+        }
+
+        .top_nav ul {
+            list-style: none; /* Remove default list styles */
+            padding: 0;
+            margin: 0;
+        }
+
+        .top_nav ul li {
+            display: inline-block; /* Display menu items horizontally */
+            margin-left: 10px; /* Add spacing between menu items */
+        }
+
+        .top_nav ul li:first-child {
+            margin-left: 0; /* Remove margin for the first menu item */
+        }
+
+        /* Main content area */
+        .left_side,
+        .right_side {
+            width: 100%; /* Full width on smaller screens */
+            box-sizing: border-box; /* Include padding and border in total width */
+        }
+
+        .left_side {
+            float: none; /* No float */
+            margin-bottom: 20px; /* Add margin */
+        }
+
+        /* Article styles */
+        article {
+            background-color: #fff; /* Add a white background */
+            padding: 20px; /* Add padding */
+            margin-bottom: 20px; /* Add margin */
+        }
+
+        /* Footer styles */
+        .page_footer {
+            clear: both; /* Clear floats */
+            text-align: center; /* Align text to the center */
+            margin-top: 30px; /* Add margin to the top */
+            padding: 10px 0; /* Add padding */
+            box-sizing: border-box; /* Include padding and border in total height */
+        }
+
+        .page_footer p {
+            margin-bottom: 10px; /* Add margin to the bottom of paragraphs */
+        }
+
+        /* Additional styling for right side div */
+        .right_side div {
+            margin-bottom: 20px; /* Add margin to the bottom */
+            padding: 20px; /* Add padding */
+            background-color: #fff; /* Add a white background */
+            border: 1px solid #000; /* Add a border */
+        }
+
+        /* Styling for images */
+        .small-image {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below inline images */
+            margin-bottom: 10px; /* Add margin below each image */
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (min-width: 768px) {
+            .top_nav {
+                text-align: right; /* Right-align navigation on larger screens */
+            }
+
+            .top_nav ul {
+                display: inline-block; /* Display menu items horizontally */
+            }
+
+            .top_nav ul li {
+                margin-left: 20px; /* Add spacing between menu items */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+<img src="path_to_your_logo.png" alt="logo area" class="logo"/>
+
+<nav class="top_nav">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Layout</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="left_side">
+
+<article>
+<header>
+<h2>Ky eshte titulli</h2>
+<h3>Ky eshte nentitulli</h3>
+</header>
+
+<p>Paragrafi i pare The Volkswagen Polo is a supermini car (B-segment) produced by the German car manufacturer Volkswagen since 1975. It is sold in Europe specially for a client named NAMIK</p>
+
+<img src="C:\Users\marti\Pictures\volkswagen_polo_2833577_orig.jpg" alt="KOHA KUR E KA PATUR NAMIKU" class="small-image">
+
+<p>Paragrafi i dyte</p>
+E MODIFIKUAR NJE INXHINIER E ASHTUQUAJTUR, SACKA, KJO MAKINE PRODHON RRETH 77HP DHE KA NJE TOP SPEED PREJ 205KMH, NJE MAKINE Q CILA I KA QI RROPET TEK RRUGET DHE PRAP NUK DIGJET. PER ME SHUME INFORMACIONE MUND TE FLISNI ME ARTISTIN E KESAJ MAKINE....
+
+<footer>INFORMACIONE RRETH POLOS.</footer>
+</article>
+
+</section>
+
+<aside class="right_side">
+
+<div>
+<h2>Informacione shtese</h2>
+<ul>
+  <li><a href="https://www.facebook.com/flavio.kuqo">Facebook</a></li>
+  <li><a href="https://www.instagram.com/flavio_kuqo">Instagram</a></li>
+</ul>
+<img src="C:\Users\marti\Downloads\WhatsApp Image 2024-07-21 at 15.16.48.jpeg" alt="Description of Image 2" class="small-image">
+</div>
+
+<div>
+<h2>Lexo artikuj te tjere</h2>
+<article>
+<header>
+<h3>Ky eshte nje tjeter artikull</h3>
+</header>
+<p>NJE MAKINJE E BLERE FILLIMISHT NGA NAMIKU NE 2013 DHE ME NJE EKSPERIENCE RRUGORE PREJ 11 VITESH KJO MAKINE AKOMA VAZHDON TE NDJEKE CDO RRUGE TE RE </p>
+<img src="path_to_your_image3.jpg" alt="Description of Image 3" class="small-image">
+<p>Klikoni nese jeni te interesuar te lexoni me teper</p>
+<footer><a href="#">Lexo me teper</a></footer>
+</article>
+</div>
+
+<img src="C:\Users\marti\Downloads\WhatsApp Image 2024-07-21 at 15.16.48 (1).jpeg" alt="Description of Image 4" class="small-image">
+
+</aside>
+
+<footer class="page_footer">&copy;Te drejtat e autorit mbi kete faqe i perkasin institutit ATC.</footer>
+
+</div>
+
+</body>
+</html>
